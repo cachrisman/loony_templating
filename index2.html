@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Title</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script type="text/javascript" src="data.js"></script>
+  <script type="text/javascript" src="app2.js"></script>
+</head>
+<body>
+    <h1 style="text-align: center;">Looney Toons</h1>
+    <div id="looney-toons-wrapper"></div>
+<script type="text/template" id="looney-toons-template">
+  <div style="text-align:center;">
+  	<hr>
+  	<img src="<%= pic %> " alt="<%= name %>" style="width: 200px;">
+	<h3><%= name %> <%= type %></h3>
+	<p>Strength: <%= strength %></p>
+	<p>Weakness: <%= weakness %></p>
+  </div>
+</script>
+</body>
+</html>
